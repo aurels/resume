@@ -3,25 +3,35 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue
+}
 
 \begin{document}
 
-\name{\Large Aurélien Malisart — Consultant Web\\[12pt]}
+\begin{flushright}
+  \footnotesize \today
+\end{flushright}
 
-\address{7000 Mons \\ Belgique}
-\address{aurelien.malisart@gmail.com \\ http://aurelien.malisart.be \\ +32 499 61 32 32}
+\name{\Large Curriculum Vitae\\[12pt]}
+
+\input{header}
+
+\vspace{2cm}
 
 \begin{resume}
-
-\input{general}
-\input{experience}
-\input{education}
-
-\newpage
-
-\input{computer_skills}
-\input{languages}
-\input{misc}
-
+  \input{general}
+  \input{experience}
+  \newpage
+  \input{education}
+  \input{computer_skills}
+  \input{languages}
+  \input{misc}
 \end{resume}
+
 \end{document}
